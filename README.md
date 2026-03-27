@@ -39,6 +39,7 @@ The current version is centered on a core workshop skill plus a follow-on varian
 - [roadmap.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/roadmap.md)
 - [plugin-spec.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/plugin-spec.md)
 - [artifact-pipeline.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/artifact-pipeline.md)
+- [first-run-walkthrough.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/first-run-walkthrough.md)
 
 ## Example case
 

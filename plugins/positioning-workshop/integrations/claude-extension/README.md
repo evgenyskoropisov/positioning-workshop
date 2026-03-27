@@ -40,6 +40,14 @@ The build currently emits both:
 7. Review the extension settings and choose a writable workshop directory if Claude prompts for one.
 8. Restart Claude Desktop if the extension installs but the tools do not show up immediately.
 
+## First thing to test after install
+
+Use the walkthrough here:
+
+- [first-run-walkthrough.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/first-run-walkthrough.md)
+
+That document gives you a clean first-run prompt, an expected outcome, and the key files to inspect after the walkthrough.
+
 ## Runtime notes
 
 - The extension uses the local Python runtime.

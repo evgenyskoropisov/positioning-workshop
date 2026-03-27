@@ -99,6 +99,19 @@ A filled fictional example lives here:
 
 - [incidentbridge/README.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/examples/incidentbridge/README.md)
 
+## First-run walkthrough
+
+If you want to see how the product should behave right after install, start here:
+
+- [first-run-walkthrough.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/first-run-walkthrough.md)
+
+It uses `Mercuryo.io` as a concrete demo and includes:
+
+- a copy-paste first prompt
+- what the assistant should do next
+- what result you should expect
+- which files matter most after the run
+
 ## Artifact outputs
 
 The workshop now persists four reusable artifacts under each workshop folder:
