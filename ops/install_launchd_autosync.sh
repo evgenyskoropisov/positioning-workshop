@@ -7,13 +7,14 @@ PLIST_PATH="$HOME/Library/LaunchAgents/${LABEL}.plist"
 STATE_DIR="$REPO_ROOT/state"
 RUNNER_SOURCE="$REPO_ROOT/ops/git_autosync.sh"
 RUNNER_HOME="$HOME/.local/bin/positioning_workshop_git_autosync.sh"
-OUT_LOG="$STATE_DIR/git_autosync.out.log"
-ERR_LOG="$STATE_DIR/git_autosync.err.log"
+HOME_LOG_DIR="$HOME/.local/state/positioning-workshop-autosync"
+OUT_LOG="$HOME_LOG_DIR/git_autosync.out.log"
+ERR_LOG="$HOME_LOG_DIR/git_autosync.err.log"
 INTERVAL_SEC="${INTERVAL_SEC:-30}"
 
-mkdir -p "$HOME/Library/LaunchAgents" "$HOME/.local/bin" "$STATE_DIR"
-cp "$RUNNER_SOURCE" "$RUNNER_HOME"
-chmod +x "$RUNNER_SOURCE" "$RUNNER_HOME"
+mkdir -p "$HOME/Library/LaunchAgents" "$HOME/.local/bin" "$HOME_LOG_DIR" "$STATE_DIR"
+chmod +x "$RUNNER_SOURCE"
+install -m 755 "$RUNNER_SOURCE" "$RUNNER_HOME"
 
 cat > "$PLIST_PATH" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
@@ -27,6 +28,8 @@ cat > "$PLIST_PATH" <<PLIST
     <string>/bin/bash</string>
     <string>${RUNNER_HOME}</string>
   </array>
+  <key>WorkingDirectory</key>
+  <string>${HOME}</string>
   <key>EnvironmentVariables</key>
   <dict>
     <key>PATH</key>
@@ -40,7 +43,7 @@ cat > "$PLIST_PATH" <<PLIST
     <key>TARGET_BRANCH</key>
     <string>main</string>
     <key>LOG_FILE</key>
-    <string>${STATE_DIR}/git_autosync.log</string>
+    <string>${HOME_LOG_DIR}/git_autosync.log</string>
   </dict>
   <key>RunAtLoad</key>
   <true/>
