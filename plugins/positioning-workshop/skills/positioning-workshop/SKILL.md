@@ -11,13 +11,14 @@ It should feel more like strategic pressure-testing than copywriting.
 
 ## Core model
 
-Every workshop is built from five layers:
+Every workshop is built from six layers:
 
 1. Evidence
 2. Market pressure
 3. Strategic choices
 4. Narrative routes
-5. Reusable outputs
+5. Decision record
+6. Reusable outputs
 
 ## Non-negotiables
 
@@ -35,6 +36,10 @@ At minimum, produce:
 - a category sentence
 - a primary wedge statement
 - an evidence ledger with confidence labels
+- a route recommendation with rationale and objections
+- a decision log the team can resume from later
+- a machine-readable workshop summary
+- a machine-readable claim ledger
 - a short messaging pack for homepage, sales, and investor use
 
 ## Reference files
@@ -46,6 +51,10 @@ Use the reference files in `references/` to keep outputs consistent:
 - `references/route-scorecard-template.md`
 - `references/team-pulse-template.md`
 - `references/messaging-pack-template.md`
+- `references/decision-log-template.md`
+- `references/workshop-summary-template.json`
+- `references/claim-ledger-template.json`
+- `references/route-recommendation-template.md`
 
 Load only the file needed for the stage you are working on.
 
@@ -168,7 +177,29 @@ When replies come back, analyze:
 
 Use `references/team-pulse-template.md` when drafting the packet.
 
-### Stage 7: Messaging pack
+### Stage 7: Persisted artifacts
+
+Before final messaging, update the durable artifacts in `artifacts/`:
+
+1. `artifacts/decision-log.md`
+   Record the final call on buyer, trigger, wedge, proof, category, boundary, and route.
+2. `artifacts/workshop-summary.json`
+   Save the compact workshop state needed to resume later work.
+3. `artifacts/claim-ledger.json`
+   Save each approved claim, confidence level, support, and owner.
+4. `artifacts/route-recommendation.md`
+   Explain which route won, why the others lost, and what to test next.
+
+Use:
+
+- `references/decision-log-template.md`
+- `references/workshop-summary-template.json`
+- `references/claim-ledger-template.json`
+- `references/route-recommendation-template.md`
+
+Treat these artifacts as the source of truth for follow-on work, variants, and future edits.
+
+### Stage 8: Messaging pack
 
 Produce a final pack with:
 
@@ -202,7 +233,7 @@ At the end of each major stage, keep a compact working summary with:
 - what is uncertain
 - what needs a forced decision
 
-If the user returns later, resume from that working summary instead of restarting the whole workshop.
+If `artifacts/workshop-summary.json` or `artifacts/decision-log.md` already exists, resume from them instead of restarting the whole workshop.
 
 ## Writing standard
 

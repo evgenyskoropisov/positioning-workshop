@@ -26,6 +26,7 @@ It is designed for:
 - route generation
 - team alignment prompt pack
 - final messaging pack
+- persisted workshop artifacts
 - reference templates for each workshop stage
 - segment and channel variant generation
 - local validation script for plugin integrity
@@ -61,3 +62,12 @@ This creates a numbered working pack under `plugins/positioning-workshop/worksho
 A filled fictional example lives here:
 
 - [incidentbridge/README.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/examples/incidentbridge/README.md)
+
+## Artifact outputs
+
+The workshop now persists four reusable artifacts under each workshop folder:
+
+- `artifacts/decision-log.md`
+- `artifacts/workshop-summary.json`
+- `artifacts/claim-ledger.json`
+- `artifacts/route-recommendation.md`

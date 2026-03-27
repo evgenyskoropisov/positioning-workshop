@@ -20,6 +20,10 @@ SKILL_SPECS = {
         "route-scorecard-template.md",
         "team-pulse-template.md",
         "messaging-pack-template.md",
+        "decision-log-template.md",
+        "workshop-summary-template.json",
+        "claim-ledger-template.json",
+        "route-recommendation-template.md",
     ],
     "positioning-variants": [
         "variant-matrix-template.md",
@@ -184,6 +188,14 @@ def validate_skill(errors: list[str]) -> None:
                     f"reference file '{skill_name}/{filename}' is empty",
                     errors,
                 )
+                if path.suffix == ".json" and path.stat().st_size > 0:
+                    try:
+                        load_json(path)
+                        print(f"OK   reference file '{skill_name}/{filename}' is valid JSON")
+                    except Exception as exc:  # noqa: BLE001
+                        message = f"reference file '{skill_name}/{filename}' is invalid JSON: {exc}"
+                        print(f"FAIL {message}")
+                        errors.append(message)
 
 
 def validate_scripts(errors: list[str]) -> None:

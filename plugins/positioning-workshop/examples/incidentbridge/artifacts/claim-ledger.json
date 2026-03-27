@@ -1,0 +1,59 @@
+{
+  "company": "IncidentBridge",
+  "slug": "incidentbridge",
+  "confidence_scale": [
+    "Proven",
+    "Supported",
+    "Bet"
+  ],
+  "claims": [
+    {
+      "id": "claim-investigation-speed",
+      "text": "IncidentBridge reduces investigation time for product and platform teams.",
+      "confidence": "Supported",
+      "support": [
+        "42 percent median reduction in investigation time across 3 paid pilots"
+      ],
+      "risk_if_overstated": "Buyers may ask for broader proof across more team types and longer periods.",
+      "owner": "Founder",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-cross-tool-context",
+      "text": "IncidentBridge helps teams reconstruct incidents across product and infrastructure signals in one timeline.",
+      "confidence": "Supported",
+      "support": [
+        "Design partner feedback on fragmented evidence across tools",
+        "Product scope includes deploys, feature flags, logs, support tickets, and on-call actions"
+      ],
+      "risk_if_overstated": "Message can blur into a broad observability promise if boundaries are not explicit.",
+      "owner": "Founder",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-investigation-category",
+      "text": "IncidentBridge is an incident investigation layer rather than a full observability suite.",
+      "confidence": "Supported",
+      "support": [
+        "Current product focus is post-alert investigation",
+        "Explicit company constraint excludes observability replacement"
+      ],
+      "risk_if_overstated": "Category may still need explanation for buyers unfamiliar with the framing.",
+      "owner": "PMM",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-observability-replacement",
+      "text": "IncidentBridge can replace current observability tooling.",
+      "confidence": "Bet",
+      "support": [],
+      "risk_if_overstated": "Would create immediate credibility loss and pull the company into the wrong comparison set.",
+      "owner": "Founder",
+      "last_checked": "2026-03-27",
+      "status": "blocked"
+    }
+  ]
+}

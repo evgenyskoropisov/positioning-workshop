@@ -1,0 +1,21 @@
+{
+  "company": "__COMPANY_NAME__",
+  "slug": "__WORKSHOP_SLUG__",
+  "confidence_scale": [
+    "Proven",
+    "Supported",
+    "Bet"
+  ],
+  "claims": [
+    {
+      "id": "",
+      "text": "",
+      "confidence": "Supported",
+      "support": [],
+      "risk_if_overstated": "",
+      "owner": "",
+      "last_checked": "",
+      "status": "active"
+    }
+  ]
+}

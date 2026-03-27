@@ -30,12 +30,14 @@ The current version is centered on a core workshop skill plus a follow-on varian
 - generates multiple positioning routes
 - turns the selected route into reusable messaging assets
 - adapts a chosen position across segments and channels without losing the core spine
+- persists workshop artifacts for reuse and later iteration
 
 ## Project docs
 
 - [product-principles.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/product-principles.md)
 - [roadmap.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/roadmap.md)
 - [plugin-spec.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/plugin-spec.md)
+- [artifact-pipeline.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/artifact-pipeline.md)
 
 ## Example case
 

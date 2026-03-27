@@ -36,6 +36,7 @@ The plugin should work with:
 6. Create a team pulse packet.
 7. Produce a final messaging pack.
 8. Adapt the approved position across segments or channels without breaking the core narrative.
+9. Persist reusable workshop artifacts for resumption, audit, and downstream use.
 
 ## Output contract
 
@@ -50,6 +51,13 @@ The default final pack should include:
 7. sales opener
 8. investor description
 9. messaging guardrails
+
+The workshop should also persist:
+
+1. `artifacts/decision-log.md`
+2. `artifacts/workshop-summary.json`
+3. `artifacts/claim-ledger.json`
+4. `artifacts/route-recommendation.md`
 
 ## Quality constraints
 

@@ -14,6 +14,10 @@ IncidentBridge is an imaginary B2B SaaS product for incident investigation. The 
 - `04b-team-synthesis.md`
 - `05-messaging-pack.md`
 - `06-variant-matrix.md`
+- `artifacts/decision-log.md`
+- `artifacts/workshop-summary.json`
+- `artifacts/claim-ledger.json`
+- `artifacts/route-recommendation.md`
 
 ## Notes
 

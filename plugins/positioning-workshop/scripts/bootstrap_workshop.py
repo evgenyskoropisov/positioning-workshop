@@ -14,11 +14,15 @@ REFERENCES_DIR = PLUGIN_ROOT / "skills" / "positioning-workshop" / "references"
 DEFAULT_WORKSHOPS_DIR = PLUGIN_ROOT / "workshops"
 
 TEMPLATE_MAP = [
-    ("evidence-file-template.md", "01-evidence-file.md"),
-    ("market-pressure-map-template.md", "02-market-pressure-map.md"),
-    ("route-scorecard-template.md", "03-route-scorecard.md"),
-    ("team-pulse-template.md", "04-team-pulse-packet.md"),
-    ("messaging-pack-template.md", "05-messaging-pack.md"),
+    ("evidence-file-template.md", Path("01-evidence-file.md")),
+    ("market-pressure-map-template.md", Path("02-market-pressure-map.md")),
+    ("route-scorecard-template.md", Path("03-route-scorecard.md")),
+    ("team-pulse-template.md", Path("04-team-pulse-packet.md")),
+    ("messaging-pack-template.md", Path("05-messaging-pack.md")),
+    ("decision-log-template.md", Path("artifacts/decision-log.md")),
+    ("workshop-summary-template.json", Path("artifacts/workshop-summary.json")),
+    ("claim-ledger-template.json", Path("artifacts/claim-ledger.json")),
+    ("route-recommendation-template.md", Path("artifacts/route-recommendation.md")),
 ]
 
 
@@ -55,12 +59,22 @@ def render_session_readme(company_name: str, slug: str) -> str:
 2. Build `02-market-pressure-map.md`
 3. Compare routes in `03-route-scorecard.md`
 4. Send `04-team-pulse-packet.md`
-5. Finalize `05-messaging-pack.md`
+5. Lock the route in `artifacts/route-recommendation.md`
+6. Update `artifacts/decision-log.md`, `artifacts/workshop-summary.json`, and `artifacts/claim-ledger.json`
+7. Finalize `05-messaging-pack.md`
+
+## Artifact source of truth
+
+- `artifacts/decision-log.md`: records the main strategic choices and why they won.
+- `artifacts/workshop-summary.json`: compact workshop state for resuming later work.
+- `artifacts/claim-ledger.json`: machine-readable list of approved claims and confidence levels.
+- `artifacts/route-recommendation.md`: final route call with objections and next tests.
 
 ## Notes
 
 - Keep proof and bets separate.
 - Make one primary decision per strategic axis.
+- Treat `artifacts/` as the source of truth for future edits and variants.
 - Revise the messaging pack only after route selection.
 """
 
@@ -72,11 +86,36 @@ def ensure_templates_exist() -> None:
         raise FileNotFoundError(f"Missing reference templates: {joined}")
 
 
+def render_template_text(template_text: str, company_name: str, slug: str) -> str:
+    return (
+        template_text.replace("__COMPANY_NAME__", company_name).replace("__WORKSHOP_SLUG__", slug)
+    )
+
+
+def strip_leading_heading(template_text: str) -> str:
+    lines = template_text.splitlines()
+    if lines and lines[0].startswith("# "):
+        lines = lines[1:]
+        if lines and lines[0] == "":
+            lines = lines[1:]
+    return "\n".join(lines).strip()
+
+
+def render_output_text(company_name: str, slug: str, target_path: Path, template_text: str) -> str:
+    rendered = render_template_text(template_text, company_name, slug)
+    if target_path.suffix == ".json":
+        return rendered.rstrip() + "\n"
+
+    title = target_path.stem.replace("-", " ").title()
+    body = strip_leading_heading(rendered)
+    return f"# {company_name}: {title}\n\n{body}\n"
+
+
 def write_file(path: Path, text: str, force: bool) -> None:
     if path.exists() and not force:
         raise FileExistsError(f"{path} already exists. Use --force to overwrite.")
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text)
+    path.write_text(text, encoding="utf-8")
 
 
 def main() -> int:
@@ -98,12 +137,12 @@ def main() -> int:
     write_file(session_readme, render_session_readme(company_name, slug), args.force)
     print(f"Created {session_readme}")
 
-    for source_name, target_name in TEMPLATE_MAP:
+    for source_name, relative_target in TEMPLATE_MAP:
         source_path = REFERENCES_DIR / source_name
-        target_path = output_dir / target_name
+        target_path = output_dir / relative_target
         template_text = source_path.read_text()
-        title = f"# {company_name}: {target_name.replace('.md', '').replace('-', ' ').title()}\n\n"
-        write_file(target_path, title + template_text, args.force)
+        rendered_text = render_output_text(company_name, slug, relative_target, template_text)
+        write_file(target_path, rendered_text, args.force)
         print(f"Created {target_path}")
 
     return 0

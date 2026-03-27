@@ -1,0 +1,41 @@
+{
+  "company": "IncidentBridge",
+  "slug": "incidentbridge",
+  "status": "route-selected",
+  "selected_route": "Wedge-led",
+  "positioning": {
+    "buyer": "Head of Platform or engineering leader responsible for reliability in a B2B SaaS company",
+    "trigger": "A live incident investigation where evidence is fragmented across deploys, feature flags, logs, support tickets, and on-call actions",
+    "category": "incident investigation layer",
+    "wedge": "reconstructs the causal cross-tool timeline after alerts fire",
+    "boundary": [
+      "not a full observability suite",
+      "not an incident response orchestration tool"
+    ]
+  },
+  "proof": {
+    "strongest_claim": "Median investigation time was reduced by 42 percent across 3 paid pilots",
+    "confidence": "Supported",
+    "support": [
+      "3 paying pilots",
+      "9 active design partners",
+      "strongest adoption in B2B SaaS teams with 50 to 300 engineers"
+    ]
+  },
+  "artifacts": {
+    "decision_log": "artifacts/decision-log.md",
+    "claim_ledger": "artifacts/claim-ledger.json",
+    "route_recommendation": "artifacts/route-recommendation.md",
+    "messaging_pack": "05-messaging-pack.md"
+  },
+  "open_questions": [
+    "Which team-size segment converts fastest in paid pilots?",
+    "Which integrations matter most in enterprise evaluation?",
+    "How much category explanation is needed before buyers understand the wedge?"
+  ],
+  "next_actions": [
+    "Test homepage and outbound variants against the wedge-led route",
+    "Collect stronger proof on investigation speed across more pilots",
+    "Keep category language tight until broader product proof exists"
+  ]
+}

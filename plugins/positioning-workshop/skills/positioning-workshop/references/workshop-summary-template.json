@@ -1,0 +1,26 @@
+{
+  "company": "__COMPANY_NAME__",
+  "slug": "__WORKSHOP_SLUG__",
+  "status": "draft",
+  "selected_route": "",
+  "positioning": {
+    "buyer": "",
+    "trigger": "",
+    "category": "",
+    "wedge": "",
+    "boundary": []
+  },
+  "proof": {
+    "strongest_claim": "",
+    "confidence": "",
+    "support": []
+  },
+  "artifacts": {
+    "decision_log": "artifacts/decision-log.md",
+    "claim_ledger": "artifacts/claim-ledger.json",
+    "route_recommendation": "artifacts/route-recommendation.md",
+    "messaging_pack": "05-messaging-pack.md"
+  },
+  "open_questions": [],
+  "next_actions": []
+}
