@@ -1,0 +1,36 @@
+{
+  "name": "positioning-workshop",
+  "version": "0.1.0",
+  "description": "Evidence-first positioning workshop for founders, PMM, and GTM teams.",
+  "author": {
+    "name": "Evgeny Skoropisov",
+    "url": "https://github.com/evgenyskoropisov"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "positioning",
+    "strategy",
+    "competitive-analysis",
+    "messaging",
+    "founder-tools"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Positioning Workshop",
+    "shortDescription": "Run a structured market-positioning session with evidence and hard tradeoffs.",
+    "longDescription": "Guides a team through source review, competitor mapping, forced strategic choices, alignment, and final messaging outputs.",
+    "developerName": "Evgeny Skoropisov",
+    "category": "Strategy",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "Research"
+    ],
+    "defaultPrompt": [
+      "Run a positioning workshop for our product.",
+      "Audit competitors and find our best wedge.",
+      "Turn founder answers into a sharp market position."
+    ],
+    "brandColor": "#0F766E"
+  }
+}
