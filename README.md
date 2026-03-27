@@ -4,6 +4,8 @@ This workspace contains a standalone positioning product that can run as a Codex
 
 The goal is to help founders, PMM, and GTM teams choose a sharper market position using evidence, tradeoffs, and team alignment instead of vague brand language.
 
+![Claude Desktop install flow](plugins/positioning-workshop/assets/readme/claude-install-flow.svg)
+
 ## What exists now
 
 - A repo-local Codex plugin scaffold
@@ -89,7 +91,13 @@ After install, Claude should have access to:
 
 - workshop prompts
 - workshop bootstrap and save tools
-- bundled templates, examples, and validation references
+- bundled templates and fictional example references
+
+Start here after install:
+
+```text
+Walk me through the built-in IncidentBridge example as if this were my first real use of the plugin.
+```
 
 ## Claude Desktop build
 

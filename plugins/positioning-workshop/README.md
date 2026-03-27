@@ -3,7 +3,9 @@
 `positioning-workshop` is a structured market-positioning product that currently ships in two forms:
 
 - a local Codex plugin
-- a Claude Desktop extension source package that builds into an `.mcpb` bundle
+- a Claude Desktop extension source package that builds into `.mcpb` and `.dxt` bundles
+
+![Claude Desktop install flow](assets/readme/claude-install-flow.svg)
 
 It is designed for:
 
@@ -72,6 +74,25 @@ Use the `.dxt` file for the smoothest Claude Desktop install flow:
 5. Choose the generated `.dxt` file.
 6. Confirm the workshop directory setting if Claude prompts for it.
 7. Restart Claude Desktop if the extension installs but its tools are not visible yet.
+
+After install, open a new chat and start with:
+
+```text
+Walk me through the built-in IncidentBridge example as if this were my first real use of the plugin.
+```
+
+## What You Get
+
+![Workshop outputs](assets/readme/workshop-output-map.svg)
+
+One completed run should leave you with:
+
+- a clear positioning statement
+- a category sentence and primary wedge
+- an evidence ledger that separates proof from bets
+- a route recommendation with objections and next tests
+- a reusable messaging pack for homepage, sales, and investor conversations
+- saved artifact files you can return to later
 
 ## Build Claude Desktop Extension
 

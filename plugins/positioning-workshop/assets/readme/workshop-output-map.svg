@@ -1,0 +1,55 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#F7F5F1"/>
+  <rect x="36" y="36" width="1208" height="688" rx="24" fill="#FFFDF8"/>
+  <text x="80" y="110" fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="700">What One Workshop Produces</text>
+  <text x="80" y="150" fill="#5B6470" font-family="Helvetica, Arial, sans-serif" font-size="20">From messy product context to a reusable positioning system.</text>
+
+  <rect x="80" y="210" width="280" height="420" rx="26" fill="#FFFFFF" stroke="#E4DED2" stroke-width="2"/>
+  <text x="112" y="264" fill="#9A6700" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Inputs</text>
+  <text x="112" y="306" fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Raw context</text>
+  <rect x="112" y="344" width="216" height="52" rx="18" fill="#FFF6D6"/>
+  <text x="136" y="377" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Website and homepage copy</text>
+  <rect x="112" y="412" width="216" height="52" rx="18" fill="#FFF6D6"/>
+  <text x="136" y="445" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Decks and product notes</text>
+  <rect x="112" y="480" width="216" height="52" rx="18" fill="#FFF6D6"/>
+  <text x="136" y="513" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Competitor and substitute list</text>
+  <rect x="112" y="548" width="216" height="52" rx="18" fill="#FFF6D6"/>
+  <text x="136" y="581" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Founder intuition and GTM context</text>
+
+  <rect x="500" y="180" width="280" height="480" rx="26" fill="#0F172A"/>
+  <text x="532" y="234" fill="#5EEAD4" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Workflow</text>
+  <text x="532" y="276" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Strategic pressure test</text>
+  <rect x="532" y="314" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
+  <text x="558" y="348" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">1. Evidence file</text>
+  <rect x="532" y="386" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
+  <text x="558" y="420" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">2. Market pressure map</text>
+  <rect x="532" y="458" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
+  <text x="558" y="492" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">3. Buyer / wedge / proof</text>
+  <rect x="532" y="530" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
+  <text x="558" y="564" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">4. Route comparison</text>
+  <rect x="532" y="602" width="216" height="54" rx="18" fill="#14B8A6"/>
+  <text x="558" y="636" fill="#062623" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">5. Messaging + artifacts</text>
+
+  <rect x="920" y="210" width="280" height="420" rx="26" fill="#FFFFFF" stroke="#CFE2DE" stroke-width="2"/>
+  <text x="952" y="264" fill="#0F766E" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Outputs</text>
+  <text x="952" y="306" fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Reusable system</text>
+  <rect x="952" y="344" width="216" height="58" rx="18" fill="#ECFDF5"/>
+  <text x="978" y="369" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Positioning statement</text>
+  <text x="978" y="389" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Category + primary wedge</text>
+  <rect x="952" y="420" width="216" height="58" rx="18" fill="#ECFDF5"/>
+  <text x="978" y="445" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Evidence ledger</text>
+  <text x="978" y="465" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Proven / Supported / Bet</text>
+  <rect x="952" y="496" width="216" height="58" rx="18" fill="#ECFDF5"/>
+  <text x="978" y="521" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Homepage hero</text>
+  <text x="978" y="541" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Sales opener / investor blurb</text>
+  <rect x="952" y="572" width="216" height="58" rx="18" fill="#ECFDF5"/>
+  <text x="978" y="597" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Decision log</text>
+  <text x="978" y="617" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Claim ledger / workshop summary</text>
+
+  <path d="M360 420H470" stroke="#D29C0C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M780 420H890" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M442 404L470 420L442 436" fill="none" stroke="#D29C0C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M862 404L890 420L862 436" fill="none" stroke="#0F766E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="80" y="688" fill="#5B6470" font-family="Helvetica, Arial, sans-serif" font-size="18">Use it when you need one believable market story, not a pile of disconnected marketing phrases.</text>
+</svg>

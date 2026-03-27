@@ -50,6 +50,8 @@ def copy_extension_source(staging_root: Path) -> None:
 def copy_bundle_content(staging_root: Path) -> None:
     bundle_root = staging_root / "bundle"
     copy_file(PLUGIN_ROOT / "README.md", bundle_root / "plugin" / "README.md")
+    if (PLUGIN_ROOT / "assets").exists():
+        copy_tree(PLUGIN_ROOT / "assets", bundle_root / "plugin" / "assets")
     copy_tree(REPO_ROOT / "docs", bundle_root / "docs")
     copy_tree(PLUGIN_ROOT / "skills", bundle_root / "skills")
     copy_tree(PLUGIN_ROOT / "examples" / "incidentbridge", bundle_root / "examples" / "incidentbridge")

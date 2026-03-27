@@ -1,0 +1,71 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#F4F7F6"/>
+  <rect x="36" y="36" width="1208" height="688" rx="24" fill="url(#bg)"/>
+  <text x="80" y="112" fill="#0F172A" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="700">Install In Claude Desktop</text>
+  <text x="80" y="152" fill="#33515C" font-family="Helvetica, Arial, sans-serif" font-size="20">Build the bundle, install the .dxt file, and start the first positioning session.</text>
+
+  <rect x="80" y="210" width="250" height="360" rx="24" fill="#FFFFFF" stroke="#CFE2DE" stroke-width="2"/>
+  <circle cx="122" cy="252" r="24" fill="#0F766E"/>
+  <text x="115" y="260" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">1</text>
+  <text x="80" y="304" fill="#0F172A" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Build</text>
+  <text x="80" y="340" fill="#33515C" font-family="Helvetica, Arial, sans-serif" font-size="18">Generate the installable Claude bundle from the repo root.</text>
+  <rect x="80" y="388" width="250" height="122" rx="18" fill="#0B1120"/>
+  <text x="102" y="426" fill="#A7F3D0" font-family="Menlo, Monaco, monospace" font-size="16">python3</text>
+  <text x="102" y="452" fill="#E2E8F0" font-family="Menlo, Monaco, monospace" font-size="16">plugins/positioning-workshop/</text>
+  <text x="102" y="478" fill="#E2E8F0" font-family="Menlo, Monaco, monospace" font-size="16">scripts/build_claude_</text>
+  <text x="102" y="504" fill="#E2E8F0" font-family="Menlo, Monaco, monospace" font-size="16">extension.py</text>
+  <text x="80" y="546" fill="#0F766E" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Result</text>
+  <text x="80" y="574" fill="#33515C" font-family="Helvetica, Arial, sans-serif" font-size="17">Creates `.dxt` and `.mcpb` in `dist/`.</text>
+
+  <rect x="390" y="210" width="250" height="360" rx="24" fill="#FFFFFF" stroke="#CFE2DE" stroke-width="2"/>
+  <circle cx="432" cy="252" r="24" fill="#0F766E"/>
+  <text x="425" y="260" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">2</text>
+  <text x="390" y="304" fill="#0F172A" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Open Claude</text>
+  <text x="390" y="340" fill="#33515C" font-family="Helvetica, Arial, sans-serif" font-size="18">Go to Claude Desktop and open the extensions area.</text>
+  <rect x="390" y="388" width="250" height="122" rx="18" fill="#F8FAFC" stroke="#D7E4E8" stroke-width="2"/>
+  <rect x="412" y="410" width="206" height="18" rx="9" fill="#DCE8EC"/>
+  <rect x="412" y="442" width="206" height="18" rx="9" fill="#DCE8EC"/>
+  <rect x="412" y="474" width="110" height="18" rx="9" fill="#99C9C1"/>
+  <text x="412" y="530" fill="#0F766E" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Path</text>
+  <text x="412" y="558" fill="#33515C" font-family="Helvetica, Arial, sans-serif" font-size="17">Settings → Extensions → Advanced settings</text>
+
+  <rect x="700" y="210" width="250" height="360" rx="24" fill="#FFFFFF" stroke="#CFE2DE" stroke-width="2"/>
+  <circle cx="742" cy="252" r="24" fill="#0F766E"/>
+  <text x="735" y="260" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">3</text>
+  <text x="700" y="304" fill="#0F172A" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Install</text>
+  <text x="700" y="340" fill="#33515C" font-family="Helvetica, Arial, sans-serif" font-size="18">Choose “Install Extension...” and select the generated `.dxt` file.</text>
+  <rect x="700" y="388" width="250" height="122" rx="18" fill="#ECFDF5" stroke="#BFE6D8" stroke-width="2"/>
+  <rect x="722" y="412" width="206" height="28" rx="14" fill="#0F766E"/>
+  <text x="752" y="431" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Install Extension...</text>
+  <rect x="722" y="456" width="160" height="22" rx="11" fill="#B9DDD5"/>
+  <text x="700" y="530" fill="#0F766E" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Choose</text>
+  <text x="700" y="558" fill="#33515C" font-family="Helvetica, Arial, sans-serif" font-size="17">`positioning-workshop-... .dxt`</text>
+
+  <rect x="1010" y="210" width="170" height="360" rx="24" fill="#0F172A"/>
+  <circle cx="1052" cy="252" r="24" fill="#14B8A6"/>
+  <text x="1045" y="260" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">4</text>
+  <text x="1034" y="304" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Run</text>
+  <text x="1032" y="344" fill="#C8D5DB" font-family="Helvetica, Arial, sans-serif" font-size="18">Start a chat and ask for a positioning workshop.</text>
+  <rect x="1032" y="390" width="126" height="126" rx="18" fill="#111827" stroke="#264653" stroke-width="2"/>
+  <text x="1048" y="430" fill="#A7F3D0" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Output</text>
+  <text x="1048" y="458" fill="#E2E8F0" font-family="Helvetica, Arial, sans-serif" font-size="14">Position</text>
+  <text x="1048" y="480" fill="#E2E8F0" font-family="Helvetica, Arial, sans-serif" font-size="14">Route</text>
+  <text x="1048" y="502" fill="#E2E8F0" font-family="Helvetica, Arial, sans-serif" font-size="14">Artifacts</text>
+  <text x="80" y="648" fill="#0F172A" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">First prompt</text>
+  <rect x="80" y="668" width="1098" height="24" rx="12" fill="#E2F3EF"/>
+  <text x="96" y="685" fill="#0F766E" font-family="Menlo, Monaco, monospace" font-size="15">Walk me through the built-in IncidentBridge example as if this were my first real use of the plugin.</text>
+
+  <path d="M330 390H374" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M640 390H684" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M950 390H992" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M362 374L386 390L362 406" fill="none" stroke="#0F766E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M672 374L696 390L672 406" fill="none" stroke="#0F766E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M980 374L1004 390L980 406" fill="none" stroke="#0F766E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <defs>
+    <linearGradient id="bg" x1="36" y1="36" x2="1244" y2="724" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFA"/>
+      <stop offset="1" stop-color="#E7F2EF"/>
+    </linearGradient>
+  </defs>
+</svg>
