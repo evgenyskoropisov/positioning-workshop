@@ -56,3 +56,27 @@ Create a working folder for a company:
 ```bash
 python3 plugins/positioning-workshop/scripts/bootstrap_workshop.py "Acme Cloud"
 ```
+
+## Git Autosync
+
+This repo includes a repo-local autosync loop that stages, commits, and pushes local changes on `main` every 30 seconds when there is something new to sync.
+
+Start it with:
+
+```bash
+bash ops/start_autosync.sh
+```
+
+Check status with:
+
+```bash
+bash ops/status_autosync.sh
+```
+
+Stop it with:
+
+```bash
+bash ops/stop_autosync.sh
+```
+
+There is also an optional `launchd` setup under `ops/install_launchd_autosync.sh`, but the background loop is the reliable default for this repo right now.
