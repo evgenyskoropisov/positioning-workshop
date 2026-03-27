@@ -2,14 +2,14 @@
 
 ## Now
 
-- solidify the workshop skill
-- sharpen the evidence ledger
-- improve route generation
-- tighten final messaging pack outputs
+- package the product cleanly for Codex and Claude
+- tighten install and test workflows
+- validate the Claude bundle on a live local install
+- keep the artifact pipeline stable across both clients
 
 ## Next
 
-- save workshop artifacts in structured form
+- add lightweight citation mode for evidence-backed claims
 - generate variants by segment or ICP
 - add lightweight citation mode for evidence-backed claims
 - create short-form output packs for websites and decks

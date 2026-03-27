@@ -1,6 +1,9 @@
 # Positioning Workshop Plugin
 
-`positioning-workshop` is a local Codex plugin for structured market-positioning work.
+`positioning-workshop` is a structured market-positioning product that currently ships in two forms:
+
+- a local Codex plugin
+- a Claude Desktop extension source package that builds into an `.mcpb` bundle
 
 It is designed for:
 
@@ -35,9 +38,9 @@ It is designed for:
 
 - confidence scoring by claim
 - segment-specific variants
-- saved workshop outputs
 - optional citation mode
 - lightweight templates for homepages and decks
+- public-ready install polish for both clients
 
 ## Local validation
 
@@ -46,6 +49,16 @@ From the repo root:
 ```bash
 python3 plugins/positioning-workshop/scripts/validate_plugin.py
 ```
+
+## Build Claude Desktop Extension
+
+Create an installable `.mcpb` bundle:
+
+```bash
+python3 plugins/positioning-workshop/scripts/build_claude_extension.py
+```
+
+The generated file lands in `plugins/positioning-workshop/dist/`.
 
 ## Bootstrap a workshop
 

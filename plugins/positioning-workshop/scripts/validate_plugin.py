@@ -33,6 +33,7 @@ SKILL_SPECS = {
 REQUIRED_SCRIPT_FILES = [
     "validate_plugin.py",
     "bootstrap_workshop.py",
+    "build_claude_extension.py",
 ]
 
 REQUIRED_MANIFEST_FIELDS = [
@@ -44,6 +45,19 @@ REQUIRED_MANIFEST_FIELDS = [
     "keywords",
     "skills",
     "interface",
+]
+
+CLAUDE_EXTENSION_ROOT = PLUGIN_ROOT / "integrations" / "claude-extension"
+CLAUDE_MANIFEST_PATH = CLAUDE_EXTENSION_ROOT / "manifest.json"
+CLAUDE_SERVER_PATH = CLAUDE_EXTENSION_ROOT / "server" / "main.py"
+CLAUDE_README_PATH = CLAUDE_EXTENSION_ROOT / "README.md"
+CLAUDE_REQUIRED_MANIFEST_FIELDS = [
+    "manifest_version",
+    "name",
+    "version",
+    "description",
+    "author",
+    "server",
 ]
 
 
@@ -208,6 +222,91 @@ def validate_scripts(errors: list[str]) -> None:
             check(path.stat().st_size > 0, f"script '{filename}' is not empty", f"script '{filename}' is empty", errors)
 
 
+def validate_claude_extension(errors: list[str]) -> None:
+    check(
+        CLAUDE_EXTENSION_ROOT.exists(),
+        "Claude extension directory exists",
+        f"missing {CLAUDE_EXTENSION_ROOT}",
+        errors,
+    )
+    check(
+        CLAUDE_MANIFEST_PATH.exists(),
+        "Claude extension manifest exists",
+        f"missing {CLAUDE_MANIFEST_PATH}",
+        errors,
+    )
+    check(
+        CLAUDE_SERVER_PATH.exists(),
+        "Claude extension server exists",
+        f"missing {CLAUDE_SERVER_PATH}",
+        errors,
+    )
+    check(
+        CLAUDE_README_PATH.exists(),
+        "Claude extension README exists",
+        f"missing {CLAUDE_README_PATH}",
+        errors,
+    )
+
+    if not CLAUDE_MANIFEST_PATH.exists():
+        return
+
+    try:
+        payload = load_json(CLAUDE_MANIFEST_PATH)
+        print("OK   Claude extension manifest is valid JSON")
+    except Exception as exc:  # noqa: BLE001
+        message = f"invalid Claude extension manifest JSON: {exc}"
+        print(f"FAIL {message}")
+        errors.append(message)
+        return
+
+    for field in CLAUDE_REQUIRED_MANIFEST_FIELDS:
+        check(
+            field in payload,
+            f"Claude manifest field '{field}' present",
+            f"Claude manifest missing '{field}'",
+            errors,
+        )
+
+    server_config = payload.get("server", {})
+    check(
+        payload.get("manifest_version") == "0.3",
+        "Claude manifest version is 0.3",
+        "Claude manifest version should be '0.3'",
+        errors,
+    )
+    check(
+        payload.get("name") == PLUGIN_ROOT.name,
+        "Claude manifest name matches plugin directory",
+        "Claude manifest name does not match plugin directory",
+        errors,
+    )
+    check(
+        payload.get("version") == load_json(MANIFEST_PATH).get("version"),
+        "Claude manifest version matches Codex plugin version",
+        "Claude manifest version does not match Codex plugin version",
+        errors,
+    )
+    check(
+        server_config.get("type") == "python",
+        "Claude extension server type is python",
+        "Claude extension server type must be 'python'",
+        errors,
+    )
+    check(
+        server_config.get("entry_point") == "server/main.py",
+        "Claude extension entry point is server/main.py",
+        "Claude extension entry point should be 'server/main.py'",
+        errors,
+    )
+    check(
+        isinstance(server_config.get("mcp_config"), dict),
+        "Claude extension includes mcp_config",
+        "Claude extension is missing server.mcp_config",
+        errors,
+    )
+
+
 def main() -> int:
     errors: list[str] = []
 
@@ -216,6 +315,7 @@ def main() -> int:
     validate_readme(errors)
     validate_skill(errors)
     validate_scripts(errors)
+    validate_claude_extension(errors)
 
     if errors:
         print(f"\nValidation failed with {len(errors)} issue(s).")

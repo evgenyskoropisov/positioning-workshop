@@ -1,12 +1,13 @@
 # Positioning Workshop
 
-This workspace contains a standalone positioning plugin for Codex.
+This workspace contains a standalone positioning product that can run as a Codex plugin and as a Claude Desktop extension.
 
 The goal is to help founders, PMM, and GTM teams choose a sharper market position using evidence, tradeoffs, and team alignment instead of vague brand language.
 
 ## What exists now
 
 - A repo-local Codex plugin scaffold
+- A Claude Desktop extension source package
 - A first working version of the core positioning skill
 - Product principles and roadmap notes
 
@@ -50,6 +51,16 @@ Run:
 ```bash
 python3 plugins/positioning-workshop/scripts/validate_plugin.py
 ```
+
+## Claude Desktop build
+
+Build a shareable `.mcpb` bundle for Claude Desktop:
+
+```bash
+python3 plugins/positioning-workshop/scripts/build_claude_extension.py
+```
+
+The build artifact is written to `plugins/positioning-workshop/dist/`.
 
 ## Workshop bootstrap
 

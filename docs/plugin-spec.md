@@ -2,7 +2,12 @@
 
 ## Product summary
 
-Positioning Workshop is a Codex plugin for turning scattered company context into a credible market position and a reusable messaging pack.
+Positioning Workshop is a cross-client positioning product for turning scattered company context into a credible market position and a reusable messaging pack.
+
+The initial supported surfaces are:
+
+- a local Codex plugin
+- a Claude Desktop extension built as an MCP bundle
 
 ## Primary users
 
@@ -17,7 +22,7 @@ Help a team choose one believable market position under evidence and market pres
 
 ## Input surface
 
-The plugin should work with:
+The product should work with:
 
 - plain-language company descriptions
 - website URLs
@@ -37,6 +42,21 @@ The plugin should work with:
 7. Produce a final messaging pack.
 8. Adapt the approved position across segments or channels without breaking the core narrative.
 9. Persist reusable workshop artifacts for resumption, audit, and downstream use.
+
+## Client packaging
+
+### Codex
+
+- local plugin manifest under `.codex-plugin/plugin.json`
+- skills exposed from `plugins/positioning-workshop/skills/`
+
+### Claude Desktop
+
+- installable `.mcpb` bundle
+- stdio MCP server implemented in Python stdlib
+- built-in tools for workshop bootstrap, workshop listing, and file persistence
+- built-in prompts for full workshop runs and variant adaptation
+- bundled static resources for docs, templates, example output, and validated workshop references
 
 ## Output contract
 
@@ -67,7 +87,7 @@ The workshop should also persist:
 - final positioning line must stay under 30 words
 - outputs should be reusable without heavy rewriting
 
-## Non-goals for v0.1
+## Non-goals for v0.2
 
 - not a brand voice system
 - not a visual brand framework
@@ -76,12 +96,10 @@ The workshop should also persist:
 
 ## Near-term build goals
 
-- structured reference templates for each stage
-- validation script for plugin integrity
-- workshop bootstrap script for session folders
-- variants skill for segment and channel adaptation
-- examples and reusable artifacts
+- public-ready packaging for Codex and Claude
 - stronger support for iterative revisions
+- lightweight citation mode for evidence-backed claims
+- short-form output packs for websites and decks
 
 ## Example artifact
 
