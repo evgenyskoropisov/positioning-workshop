@@ -281,8 +281,9 @@ def validate_claude_extension(errors: list[str]) -> None:
         "Claude manifest name does not match plugin directory",
         errors,
     )
+    codex_manifest = load_json(MANIFEST_PATH) if MANIFEST_PATH.exists() else {}
     check(
-        payload.get("version") == load_json(MANIFEST_PATH).get("version"),
+        payload.get("version") == codex_manifest.get("version"),
         "Claude manifest version matches Codex plugin version",
         "Claude manifest version does not match Codex plugin version",
         errors,

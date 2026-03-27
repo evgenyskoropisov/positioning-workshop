@@ -11,7 +11,6 @@
 
 - add lightweight citation mode for evidence-backed claims
 - generate variants by segment or ICP
-- add lightweight citation mode for evidence-backed claims
 - create short-form output packs for websites and decks
 
 ## Later
