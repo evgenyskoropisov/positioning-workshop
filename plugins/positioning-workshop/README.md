@@ -50,15 +50,38 @@ From the repo root:
 python3 plugins/positioning-workshop/scripts/validate_plugin.py
 ```
 
-## Build Claude Desktop Extension
+## Install In Claude Desktop
 
-Create an installable `.mcpb` bundle:
+Build the install bundle:
 
 ```bash
 python3 plugins/positioning-workshop/scripts/build_claude_extension.py
 ```
 
-The generated file lands in `plugins/positioning-workshop/dist/`.
+This generates two equivalent bundle files under `plugins/positioning-workshop/dist/`:
+
+- `positioning-workshop-claude-extension-v0.2.0.mcpb`
+- `positioning-workshop-claude-extension-v0.2.0.dxt`
+
+Use the `.dxt` file for the smoothest Claude Desktop install flow:
+
+1. Open Claude Desktop.
+2. Go to `Settings > Extensions`.
+3. Open `Advanced settings`.
+4. In `Extension Developer`, click `Install Extension...`
+5. Choose the generated `.dxt` file.
+6. Confirm the workshop directory setting if Claude prompts for it.
+7. Restart Claude Desktop if the extension installs but its tools are not visible yet.
+
+## Build Claude Desktop Extension
+
+Create installable Claude Desktop bundles:
+
+```bash
+python3 plugins/positioning-workshop/scripts/build_claude_extension.py
+```
+
+The generated files land in `plugins/positioning-workshop/dist/`.
 
 ## Bootstrap a workshop
 

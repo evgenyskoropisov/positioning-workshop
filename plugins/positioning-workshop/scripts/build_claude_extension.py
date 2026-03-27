@@ -73,17 +73,20 @@ def main() -> int:
         return 1
 
     DIST_ROOT.mkdir(parents=True, exist_ok=True)
-    artifact_name = f"{PLUGIN_ROOT.name}-claude-extension-v{version}.mcpb"
-    artifact_path = DIST_ROOT / artifact_name
+    artifact_stem = f"{PLUGIN_ROOT.name}-claude-extension-v{version}"
+    mcpb_path = DIST_ROOT / f"{artifact_stem}.mcpb"
+    dxt_path = DIST_ROOT / f"{artifact_stem}.dxt"
 
     with tempfile.TemporaryDirectory(prefix="positioning-workshop-mcpb-") as temp_dir:
         staging_root = Path(temp_dir) / "package"
         ensure_clean_dir(staging_root)
         copy_extension_source(staging_root)
         copy_bundle_content(staging_root)
-        create_archive(staging_root, artifact_path)
+        create_archive(staging_root, mcpb_path)
+        shutil.copyfile(mcpb_path, dxt_path)
 
-    print(f"Built Claude Desktop bundle: {artifact_path}")
+    print(f"Built Claude Desktop bundle: {mcpb_path}")
+    print(f"Built Claude Desktop compatibility bundle: {dxt_path}")
     return 0
 
 

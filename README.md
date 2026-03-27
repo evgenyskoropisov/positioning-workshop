@@ -52,6 +52,44 @@ Run:
 python3 plugins/positioning-workshop/scripts/validate_plugin.py
 ```
 
+## Install
+
+### Codex
+
+The Codex plugin lives at:
+
+- [plugin.json](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/.codex-plugin/plugin.json)
+- [plugin README](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/README.md)
+
+### Claude Desktop
+
+Build the Claude Desktop extension bundle:
+
+```bash
+python3 plugins/positioning-workshop/scripts/build_claude_extension.py
+```
+
+This writes two equivalent install artifacts to `plugins/positioning-workshop/dist/`:
+
+- `positioning-workshop-claude-extension-v0.2.0.mcpb`
+- `positioning-workshop-claude-extension-v0.2.0.dxt`
+
+Recommended install flow:
+
+1. Install or update Claude Desktop.
+2. Open `Settings > Extensions`.
+3. Open `Advanced settings`.
+4. In `Extension Developer`, click `Install Extension...`
+5. Select the generated `.dxt` file from `plugins/positioning-workshop/dist/`.
+6. If Claude asks for a workshop directory, keep the default or choose your own writable folder.
+7. Restart Claude Desktop if the extension appears installed but tools are not visible yet.
+
+After install, Claude should have access to:
+
+- workshop prompts
+- workshop bootstrap and save tools
+- bundled templates, examples, and validation references
+
 ## Claude Desktop build
 
 Build a shareable `.mcpb` bundle for Claude Desktop:
@@ -60,7 +98,7 @@ Build a shareable `.mcpb` bundle for Claude Desktop:
 python3 plugins/positioning-workshop/scripts/build_claude_extension.py
 ```
 
-The build artifact is written to `plugins/positioning-workshop/dist/`.
+The build artifacts are written to `plugins/positioning-workshop/dist/`.
 
 ## Workshop bootstrap
 

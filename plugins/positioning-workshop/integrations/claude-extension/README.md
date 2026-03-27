@@ -2,7 +2,7 @@
 
 This directory contains the Claude Desktop extension source for `positioning-workshop`.
 
-It is packaged as an MCP bundle (`.mcpb`) so the same product can be shared across:
+It is packaged as an MCP bundle so the same product can be shared across:
 
 - Codex, through the local plugin manifest
 - Claude Desktop, through a one-click installable MCP extension
@@ -23,6 +23,22 @@ python3 plugins/positioning-workshop/scripts/build_claude_extension.py
 ```
 
 The build artifact is written to `plugins/positioning-workshop/dist/`.
+
+The build currently emits both:
+
+- `.mcpb` as the canonical MCP bundle artifact
+- `.dxt` as a Claude Desktop compatibility alias with identical contents
+
+## Install in Claude Desktop
+
+1. Build the bundle from the repo root.
+2. Open Claude Desktop.
+3. Go to `Settings > Extensions`.
+4. Open `Advanced settings`.
+5. In the `Extension Developer` section, click `Install Extension...`
+6. Select the generated `.dxt` bundle from `plugins/positioning-workshop/dist/`
+7. Review the extension settings and choose a writable workshop directory if Claude prompts for one.
+8. Restart Claude Desktop if the extension installs but the tools do not show up immediately.
 
 ## Runtime notes
 
