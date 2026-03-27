@@ -137,3 +137,9 @@ The workshop now persists four reusable artifacts under each workshop folder:
 - `artifacts/workshop-summary.json`
 - `artifacts/claim-ledger.json`
 - `artifacts/route-recommendation.md`
+
+## License
+
+This project is currently `UNLICENSED`.
+
+The repository is public for viewing and evaluation, but it is not yet released under an open-source license. Unless that changes, copying, modifying, redistributing, or using it commercially requires direct permission from the author.

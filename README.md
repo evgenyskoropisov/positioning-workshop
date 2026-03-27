@@ -115,26 +115,10 @@ Create a working folder for a company:
 python3 plugins/positioning-workshop/scripts/bootstrap_workshop.py "Acme Cloud"
 ```
 
-## Git Autosync
+## License
 
-This repo includes a repo-local autosync loop that stages, commits, and pushes local changes on `main` every 30 seconds when there is something new to sync.
+This repository is currently `UNLICENSED`.
 
-Start it with:
+That means the code is public to view and evaluate, but there is no open-source permission grant yet for copying, modifying, redistributing, or commercial use.
 
-```bash
-bash ops/start_autosync.sh
-```
-
-Check status with:
-
-```bash
-bash ops/status_autosync.sh
-```
-
-Stop it with:
-
-```bash
-bash ops/stop_autosync.sh
-```
-
-There is also an optional `launchd` setup under `ops/install_launchd_autosync.sh`, but the background loop is the reliable default for this repo right now.
+If you want to use the project beyond evaluation, wait for an explicit public license or get direct permission from the author.
