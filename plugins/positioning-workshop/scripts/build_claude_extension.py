@@ -53,7 +53,6 @@ def copy_bundle_content(staging_root: Path) -> None:
     copy_tree(REPO_ROOT / "docs", bundle_root / "docs")
     copy_tree(PLUGIN_ROOT / "skills", bundle_root / "skills")
     copy_tree(PLUGIN_ROOT / "examples" / "incidentbridge", bundle_root / "examples" / "incidentbridge")
-    copy_tree(PLUGIN_ROOT / "workshops" / "mercuryo-io", bundle_root / "workshops" / "mercuryo-io")
 
 
 def create_archive(staging_root: Path, output_path: Path) -> None:

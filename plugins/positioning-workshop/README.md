@@ -105,7 +105,7 @@ If you want to see how the product should behave right after install, start here
 
 - [first-run-walkthrough.md](/Users/evgenyskoropisov/Documents/New%20project%2011/docs/first-run-walkthrough.md)
 
-It uses `Mercuryo.io` as a concrete demo and includes:
+It uses the fictional `IncidentBridge` example and includes:
 
 - a copy-paste first prompt
 - what the assistant should do next

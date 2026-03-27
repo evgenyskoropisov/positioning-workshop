@@ -32,13 +32,11 @@ STATIC_SINGLE_FILES: List[Tuple[str, str]] = [
     ("docs/plugin-spec.md", "Product scope, workflow, and output contract."),
     ("docs/product-principles.md", "Product principles and design intent."),
     ("docs/roadmap.md", "Roadmap and upcoming priorities."),
-    ("docs/validation-notes-mercuryo.md", "Notes from the Mercuryo validation run."),
 ]
 
 STATIC_TREE_ROOTS: List[Tuple[str, str]] = [
     ("skills", "Skill definitions and reference templates."),
     ("examples/incidentbridge", "Filled fictional example workshop."),
-    ("workshops/mercuryo-io", "Validated public-company workshop reference."),
 ]
 
 TEMPLATE_MAP = [
@@ -604,7 +602,6 @@ Use the following built-in resources as needed:
 - `skills/positioning-workshop/SKILL.md`
 - the reference templates under `skills/positioning-workshop/references/`
 - the IncidentBridge example
-- the Mercuryo validation workshop if you need a higher-fidelity benchmark
 
 User goal:
 {goal}

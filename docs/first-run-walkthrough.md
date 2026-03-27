@@ -13,15 +13,15 @@ Start from a clean install and run one real example so you can see:
 - what files it should create
 - what kind of positioning output you should expect
 
-## Recommended demo brand
+## Recommended demo example
 
-Use `Mercuryo.io`.
+Use `IncidentBridge`.
 
 Why this is a good first run:
 
-- the repo already contains a validated workshop for it
-- the company has enough product breadth to make the workflow interesting
-- the resulting position is clear enough to judge quickly
+- it is fictional and safe to keep in a public repo
+- the repo already contains a full end-to-end workshop for it
+- the result is sharp enough to show what good output should feel like
 
 ## What a clean install gives you
 
@@ -31,7 +31,6 @@ After installing the plugin in Codex or the extension in Claude Desktop, the pro
 - the variants method
 - the built-in reference templates
 - the IncidentBridge example
-- the Mercuryo validation workshop
 - workshop bootstrap and file-save tools in Claude Desktop
 
 ## First-run prompt
@@ -39,9 +38,9 @@ After installing the plugin in Codex or the extension in Claude Desktop, the pro
 Open a fresh conversation and paste this:
 
 ```text
-Run a positioning workshop for Mercuryo.io.
+Walk me through the built-in IncidentBridge example as if this were my first real use of the plugin.
 
-Use the existing Mercuryo validation materials in the plugin as reference context, but act like this is my first live walkthrough.
+Use the built-in IncidentBridge materials in the plugin as reference context.
 
 I want you to:
 1. explain the workflow as you go,
@@ -58,7 +57,7 @@ Keep it practical and easy to follow.
 On a healthy run, the assistant should roughly do this:
 
 1. Explain that it will start from evidence and market pressure before jumping to copy.
-2. Read the existing Mercuryo workshop materials or bootstrap a fresh workshop if none exists.
+2. Read the existing IncidentBridge example materials or bootstrap a fresh fictional workshop if needed.
 3. Walk through the core tradeoffs:
    - buyer
    - trigger
@@ -72,23 +71,23 @@ On a healthy run, the assistant should roughly do this:
 
 ## What the winning answer should roughly sound like
 
-The validated Mercuryo result currently lands here:
+The built-in IncidentBridge result currently lands here:
 
-- One-line position: Mercuryo helps web3 apps keep users in-product across buy, sell, and spend through one crypto payment engine.
-- Category: `web3 payment engine`
-- Primary wedge: one embedded payment layer across buy, sell, and spend
+- One-line position: IncidentBridge helps product and platform teams cut incident investigation time through causal cross-tool timelines.
+- Category: `incident investigation layer`
+- Primary wedge: reconstructs the causal cross-tool timeline after alerts fire
 - Winning route: `Wedge-led`
 
-The core idea is that Mercuryo is strongest when framed as the embedded payment layer that keeps user activity inside the partner product, instead of as just another on-ramp provider.
+The core idea is that IncidentBridge is strongest when framed as the investigation layer that helps teams understand what changed across tools after alerts fire, not as a broad observability replacement.
 
 ## Which files matter most after the run
 
 If you only inspect four files, make it these:
 
-- [route-recommendation.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/workshops/mercuryo-io/artifacts/route-recommendation.md)
-- [workshop-summary.json](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/workshops/mercuryo-io/artifacts/workshop-summary.json)
-- [messaging-pack.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/workshops/mercuryo-io/05-messaging-pack.md)
-- [variant-matrix.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/workshops/mercuryo-io/06-variant-matrix.md)
+- [route-recommendation.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/examples/incidentbridge/artifacts/route-recommendation.md)
+- [workshop-summary.json](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/examples/incidentbridge/artifacts/workshop-summary.json)
+- [messaging-pack.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/examples/incidentbridge/05-messaging-pack.md)
+- [variant-matrix.md](/Users/evgenyskoropisov/Documents/New%20project%2011/plugins/positioning-workshop/examples/incidentbridge/06-variant-matrix.md)
 
 What each file tells you:
 
@@ -99,13 +98,13 @@ What each file tells you:
 
 ## If you want to run your own brand next
 
-After the Mercuryo walkthrough, open a new conversation and paste:
+After the IncidentBridge walkthrough, open a new conversation and paste:
 
 ```text
 Run a positioning workshop for [COMPANY NAME].
 
 Start from evidence, not slogans.
-If you need a model for the workflow and output quality, use the Mercuryo walkthrough pattern from the plugin.
+If you need a model for the workflow and output quality, use the IncidentBridge walkthrough pattern from the plugin.
 
 I want:
 1. an evidence file,

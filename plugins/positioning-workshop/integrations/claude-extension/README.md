@@ -10,7 +10,7 @@ It is packaged as an MCP bundle so the same product can be shared across:
 ## What the extension includes
 
 - a stdio MCP server implemented in Python stdlib
-- bundled workshop docs, skills, templates, example output, and validated reference material
+- bundled workshop docs, skills, templates, and fictional example output
 - prompts for full workshop runs and variant adaptation
 - tools for bootstrapping workshops, listing workshops, and saving workshop files
 
@@ -74,4 +74,3 @@ That document gives you a clean first-run prompt, an expected outcome, and the k
 - both skill definitions
 - all workshop reference templates
 - the IncidentBridge example
-- the validated Mercuryo workshop

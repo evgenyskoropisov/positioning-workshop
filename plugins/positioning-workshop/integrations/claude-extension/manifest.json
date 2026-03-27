@@ -4,7 +4,7 @@
   "display_name": "Positioning Workshop",
   "version": "0.2.0",
   "description": "Evidence-first positioning workshop for founders, PMM, and GTM teams.",
-  "long_description": "Run a structured positioning workshop inside Claude Desktop with reusable artifacts, reference templates, example outputs, and a validated public-company walkthrough.",
+  "long_description": "Run a structured positioning workshop inside Claude Desktop with reusable artifacts, reference templates, and example outputs from a fictional end-to-end walkthrough.",
   "author": {
     "name": "Evgeny Skoropisov",
     "url": "https://github.com/evgenyskoropisov"
