@@ -1,0 +1,41 @@
+{
+  "company": "Mercuryo.io",
+  "slug": "mercuryo-io",
+  "status": "route-selected",
+  "selected_route": "Wedge-led",
+  "positioning": {
+    "buyer": "Product, partnerships, revenue, or growth leader at a wallet, exchange, or web3 app",
+    "trigger": "The team wants embedded buy, sell, or spend flows without leaking users into third-party redirects or stitching multiple vendors together",
+    "category": "web3 payment engine",
+    "wedge": "one embedded payment layer across buy, sell, and spend",
+    "boundary": [
+      "not a consumer exchange",
+      "not only a single on-ramp widget vendor"
+    ]
+  },
+  "proof": {
+    "strongest_claim": "Mercuryo is trusted by 500+ leading web3 companies and reports 12M+ KYCd users",
+    "confidence": "Proven",
+    "support": [
+      "Homepage trust section",
+      "Homepage On-Ramp factoids",
+      "Partner logos including MetaMask, Trust Wallet, Ledger, and others"
+    ]
+  },
+  "artifacts": {
+    "decision_log": "artifacts/decision-log.md",
+    "claim_ledger": "artifacts/claim-ledger.json",
+    "route_recommendation": "artifacts/route-recommendation.md",
+    "messaging_pack": "05-messaging-pack.md"
+  },
+  "open_questions": [
+    "Should Mercuryo lead with the broader payment-engine story or with On-Ramp on first touch?",
+    "Which segment has the highest urgency today: wallets, exchanges, or broader dApps?",
+    "Is Spend part of the main story or the strongest expansion layer after On-Ramp adoption?"
+  ],
+  "next_actions": [
+    "Test a homepage narrative focused on keeping users in-product across buy, sell, and spend",
+    "Audit sales calls to see which product and buyer combination closes fastest",
+    "Reduce vague gateway language and replace it with concrete embedded-payment outcomes"
+  ]
+}

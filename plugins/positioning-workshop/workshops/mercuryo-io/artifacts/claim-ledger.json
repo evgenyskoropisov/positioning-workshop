@@ -1,0 +1,85 @@
+{
+  "company": "Mercuryo.io",
+  "slug": "mercuryo-io",
+  "confidence_scale": [
+    "Proven",
+    "Supported",
+    "Bet"
+  ],
+  "claims": [
+    {
+      "id": "claim-500-plus-companies",
+      "text": "Mercuryo is trusted by 500+ leading web3 companies.",
+      "confidence": "Proven",
+      "support": [
+        "Homepage trust section",
+        "Visible partner logos on official site"
+      ],
+      "risk_if_overstated": "Low if kept to the published count and current framing.",
+      "owner": "PMM",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-12m-kycd-users",
+      "text": "Mercuryo has 12M+ KYCd users.",
+      "confidence": "Proven",
+      "support": [
+        "Homepage On-Ramp product fact"
+      ],
+      "risk_if_overstated": "Low if used exactly as a public site claim rather than a broader customer-success claim.",
+      "owner": "PMM",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-on-site-buy-sell",
+      "text": "Mercuryo helps partners keep users on-site while they buy and sell crypto.",
+      "confidence": "Supported",
+      "support": [
+        "On-Ramp page title and embedded-flow messaging"
+      ],
+      "risk_if_overstated": "Needs care because it is a product promise rather than an independently quantified outcome.",
+      "owner": "Product marketing",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-branded-cards",
+      "text": "Mercuryo helps wallets and web3 companies issue branded payment cards to users.",
+      "confidence": "Supported",
+      "support": [
+        "Spend product page headline and offer section"
+      ],
+      "risk_if_overstated": "Needs guardrails so it does not imply every partner launches the full card program instantly.",
+      "owner": "Product marketing",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-payment-engine",
+      "text": "Mercuryo is the payment engine behind top web3 businesses.",
+      "confidence": "Supported",
+      "support": [
+        "Core homepage headline",
+        "Broad product set and partner roster"
+      ],
+      "risk_if_overstated": "Can feel vague unless immediately tied to buy, sell, and spend outcomes.",
+      "owner": "Brand",
+      "last_checked": "2026-03-27",
+      "status": "active"
+    },
+    {
+      "id": "claim-most-trusted-compliance",
+      "text": "Mercuryo has one of the most trusted compliance stacks in the space.",
+      "confidence": "Bet",
+      "support": [
+        "About-page narrative about regulations and compliance"
+      ],
+      "risk_if_overstated": "High. This needs third-party validation or measurable proof before it should become core messaging.",
+      "owner": "Brand",
+      "last_checked": "2026-03-27",
+      "status": "blocked"
+    }
+  ]
+}
