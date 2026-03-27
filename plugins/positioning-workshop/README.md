@@ -5,7 +5,9 @@
 - a local Codex plugin
 - a Claude Desktop extension source package that builds into `.mcpb` and `.dxt` bundles
 
-![Claude Desktop install flow](assets/readme/claude-install-flow.svg)
+<p align="center">
+  <img src="assets/readme/claude-install-flow.svg" alt="Claude Desktop install flow" width="1000">
+</p>
 
 It is designed for:
 
@@ -83,7 +85,9 @@ Walk me through the built-in IncidentBridge example as if this were my first rea
 
 ## What You Get
 
-![Workshop outputs](assets/readme/workshop-output-map.svg)
+<p align="center">
+  <img src="assets/readme/workshop-output-map.svg" alt="Workshop outputs" width="1000">
+</p>
 
 One completed run should leave you with:
 

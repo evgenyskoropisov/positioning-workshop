@@ -1,55 +1,111 @@
 <svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1280" height="760" rx="28" fill="#F7F5F1"/>
-  <rect x="36" y="36" width="1208" height="688" rx="24" fill="#FFFDF8"/>
-  <text x="80" y="110" fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="700">What One Workshop Produces</text>
-  <text x="80" y="150" fill="#5B6470" font-family="Helvetica, Arial, sans-serif" font-size="20">From messy product context to a reusable positioning system.</text>
+  <rect width="1280" height="760" fill="#F6F3ED"/>
+  <path d="M0 0H1280V220C1129.59 260.229 996.559 280.344 880 280.344C641.359 280.344 348.026 196.165 0 28V0Z" fill="#FFF8EE"/>
+  <g filter="url(#shadowLg)">
+    <rect x="40" y="40" width="1200" height="680" rx="32" fill="#FCFBF8"/>
+  </g>
 
-  <rect x="80" y="210" width="280" height="420" rx="26" fill="#FFFFFF" stroke="#E4DED2" stroke-width="2"/>
-  <text x="112" y="264" fill="#9A6700" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Inputs</text>
-  <text x="112" y="306" fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Raw context</text>
-  <rect x="112" y="344" width="216" height="52" rx="18" fill="#FFF6D6"/>
-  <text x="136" y="377" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Website and homepage copy</text>
-  <rect x="112" y="412" width="216" height="52" rx="18" fill="#FFF6D6"/>
-  <text x="136" y="445" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Decks and product notes</text>
-  <rect x="112" y="480" width="216" height="52" rx="18" fill="#FFF6D6"/>
-  <text x="136" y="513" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Competitor and substitute list</text>
-  <rect x="112" y="548" width="216" height="52" rx="18" fill="#FFF6D6"/>
-  <text x="136" y="581" fill="#7C5D00" font-family="Helvetica, Arial, sans-serif" font-size="18">Founder intuition and GTM context</text>
+  <text x="88" y="112" fill="#111827" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Workshop Output</text>
+  <text x="88" y="162" fill="#111827" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" font-weight="700">From raw context to a reusable positioning system</text>
+  <text x="88" y="202" fill="#5B6470" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="20">The plugin narrows the story, forces tradeoffs, and leaves behind files you can actually continue from.</text>
 
-  <rect x="500" y="180" width="280" height="480" rx="26" fill="#0F172A"/>
-  <text x="532" y="234" fill="#5EEAD4" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Workflow</text>
-  <text x="532" y="276" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Strategic pressure test</text>
-  <rect x="532" y="314" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
-  <text x="558" y="348" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">1. Evidence file</text>
-  <rect x="532" y="386" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
-  <text x="558" y="420" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">2. Market pressure map</text>
-  <rect x="532" y="458" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
-  <text x="558" y="492" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">3. Buyer / wedge / proof</text>
-  <rect x="532" y="530" width="216" height="54" rx="18" fill="#111F35" stroke="#24415C" stroke-width="2"/>
-  <text x="558" y="564" fill="#E5F9F6" font-family="Helvetica, Arial, sans-serif" font-size="18">4. Route comparison</text>
-  <rect x="532" y="602" width="216" height="54" rx="18" fill="#14B8A6"/>
-  <text x="558" y="636" fill="#062623" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">5. Messaging + artifacts</text>
+  <g filter="url(#shadowMd)">
+    <rect x="80" y="250" width="282" height="372" rx="28" fill="#FFFFFF"/>
+  </g>
+  <text x="112" y="304" fill="#AE7A00" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">INPUTS</text>
+  <text x="112" y="346" fill="#111827" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Messy source material</text>
+  <rect x="112" y="378" width="218" height="46" rx="16" fill="#FFF5DB"/>
+  <text x="132" y="406" fill="#805F00" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Website and homepage copy</text>
+  <rect x="112" y="438" width="218" height="46" rx="16" fill="#FFF5DB"/>
+  <text x="132" y="466" fill="#805F00" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Decks and founder notes</text>
+  <rect x="112" y="498" width="218" height="46" rx="16" fill="#FFF5DB"/>
+  <text x="132" y="526" fill="#805F00" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Competitors and substitutes</text>
+  <rect x="112" y="558" width="218" height="46" rx="16" fill="#FFF5DB"/>
+  <text x="132" y="586" fill="#805F00" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Team intuition and product context</text>
 
-  <rect x="920" y="210" width="280" height="420" rx="26" fill="#FFFFFF" stroke="#CFE2DE" stroke-width="2"/>
-  <text x="952" y="264" fill="#0F766E" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Outputs</text>
-  <text x="952" y="306" fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Reusable system</text>
-  <rect x="952" y="344" width="216" height="58" rx="18" fill="#ECFDF5"/>
-  <text x="978" y="369" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Positioning statement</text>
-  <text x="978" y="389" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Category + primary wedge</text>
-  <rect x="952" y="420" width="216" height="58" rx="18" fill="#ECFDF5"/>
-  <text x="978" y="445" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Evidence ledger</text>
-  <text x="978" y="465" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Proven / Supported / Bet</text>
-  <rect x="952" y="496" width="216" height="58" rx="18" fill="#ECFDF5"/>
-  <text x="978" y="521" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Homepage hero</text>
-  <text x="978" y="541" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Sales opener / investor blurb</text>
-  <rect x="952" y="572" width="216" height="58" rx="18" fill="#ECFDF5"/>
-  <text x="978" y="597" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Decision log</text>
-  <text x="978" y="617" fill="#115E59" font-family="Helvetica, Arial, sans-serif" font-size="17">Claim ledger / workshop summary</text>
+  <g filter="url(#shadowDark)">
+    <rect x="476" y="214" width="328" height="444" rx="32" fill="url(#core)"/>
+  </g>
+  <text x="512" y="274" fill="#82F3E0" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">WORKFLOW CORE</text>
+  <text x="512" y="318" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700">Strategic pressure test</text>
+  <text x="512" y="352" fill="#D5E3E7" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="18">Not just copy generation. It forces one believable market story.</text>
+  <rect x="512" y="392" width="256" height="50" rx="18" fill="#11263A"/>
+  <text x="538" y="423" fill="#F3FBFC" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">1. Evidence file</text>
+  <rect x="512" y="456" width="256" height="50" rx="18" fill="#11263A"/>
+  <text x="538" y="487" fill="#F3FBFC" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">2. Market pressure map</text>
+  <rect x="512" y="520" width="256" height="50" rx="18" fill="#11263A"/>
+  <text x="538" y="551" fill="#F3FBFC" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">3. Buyer, wedge, proof, category</text>
+  <rect x="512" y="584" width="256" height="50" rx="18" fill="#14B8A6"/>
+  <text x="538" y="615" fill="#072B2A" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">4. Route choice + messaging artifacts</text>
 
-  <path d="M360 420H470" stroke="#D29C0C" stroke-width="6" stroke-linecap="round"/>
-  <path d="M780 420H890" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
-  <path d="M442 404L470 420L442 436" fill="none" stroke="#D29C0C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M862 404L890 420L862 436" fill="none" stroke="#0F766E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#shadowMd)">
+    <rect x="918" y="250" width="282" height="372" rx="28" fill="#FFFFFF"/>
+  </g>
+  <text x="950" y="304" fill="#0F766E" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">OUTPUTS</text>
+  <text x="950" y="346" fill="#111827" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Reusable system</text>
+  <rect x="950" y="378" width="218" height="54" rx="18" fill="#EAF8F4"/>
+  <text x="972" y="404" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Positioning statement</text>
+  <text x="972" y="423" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">Category sentence + primary wedge</text>
+  <rect x="950" y="446" width="218" height="54" rx="18" fill="#EAF8F4"/>
+  <text x="972" y="472" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Evidence ledger</text>
+  <text x="972" y="491" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">Proven / Supported / Bet</text>
+  <rect x="950" y="514" width="218" height="54" rx="18" fill="#EAF8F4"/>
+  <text x="972" y="540" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Messaging pack</text>
+  <text x="972" y="559" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">Homepage, sales, investor language</text>
+  <rect x="950" y="582" width="218" height="54" rx="18" fill="#EAF8F4"/>
+  <text x="972" y="608" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Saved artifacts</text>
+  <text x="972" y="627" fill="#165F57" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">Decision log, claim ledger, summary</text>
 
-  <text x="80" y="688" fill="#5B6470" font-family="Helvetica, Arial, sans-serif" font-size="18">Use it when you need one believable market story, not a pile of disconnected marketing phrases.</text>
+  <path d="M362 436H454" stroke="#D9A71F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M804 436H894" stroke="#6DAAA0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M438 422L454 436L438 450" fill="none" stroke="#D9A71F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M878 422L894 436L878 450" fill="none" stroke="#6DAAA0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#shadowSm)">
+    <rect x="432" y="660" width="416" height="44" rx="22" fill="#FFFFFF"/>
+  </g>
+  <text x="456" y="688" fill="#4B5F69" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="17">Best when you need one credible market story instead of scattered marketing phrases.</text>
+
+  <defs>
+    <linearGradient id="core" x1="476" y1="214" x2="804" y2="658" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#173A41"/>
+    </linearGradient>
+    <filter id="shadowLg" x="16" y="24" width="1248" height="728" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="8"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0 0.160784 0 0 0 0.08 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_1" result="shape"/>
+    </filter>
+    <filter id="shadowMd" x="64" y="238" width="1152" height="408" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0 0.160784 0 0 0 0.08 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_2" result="shape"/>
+    </filter>
+    <filter id="shadowDark" x="452" y="198" width="376" height="492" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0509804 0 0 0 0 0.113725 0 0 0 0 0.145098 0 0 0 0.14 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_3"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_3" result="shape"/>
+    </filter>
+    <filter id="shadowSm" x="420" y="652" width="440" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0 0.160784 0 0 0 0.08 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_4"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_4" result="shape"/>
+    </filter>
+  </defs>
 </svg>

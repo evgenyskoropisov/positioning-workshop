@@ -4,7 +4,9 @@ This workspace contains a standalone positioning product that can run as a Codex
 
 The goal is to help founders, PMM, and GTM teams choose a sharper market position using evidence, tradeoffs, and team alignment instead of vague brand language.
 
-![Claude Desktop install flow](plugins/positioning-workshop/assets/readme/claude-install-flow.svg)
+<p align="center">
+  <img src="plugins/positioning-workshop/assets/readme/claude-install-flow.svg" alt="Claude Desktop install flow" width="1000">
+</p>
 
 ## What exists now
 
